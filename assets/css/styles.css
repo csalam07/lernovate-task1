@@ -68,11 +68,50 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   justify-self: center;
+}
+
+@media screen and (max-width: 368px) {
+  img {
+    width: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+    height: 30px;
+  }
+  h1 {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 0.4em;
+  }
+  .social__container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  img {
+    width: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    height: 80px;
+  }
+  .social__icon {
+    display: none;
+  }
+  a {
+    font-size: 0.6em;
+    margin: 0.1em;
+  }
+  h1 {
+    font-size: 1.25em;
+  }
+  p {
+    font-size: 0.6em;
+  }
 }
 
 .home__img {
@@ -96,13 +135,11 @@ table th {
   border-style: solid;
   padding: 3px;
   text-align: start;
-  font-weight: 600;
 }
 
 .title,
 table th {
   color: #fff;
-  font-weight: bold;
 }
 
 table thead {
