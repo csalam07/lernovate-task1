@@ -90,6 +90,21 @@ img {
   .social__container {
     display: none;
   }
+
+  table {
+    border-width: 1px;
+  }
+
+  table td,
+  table th {
+    border-width: 1px;
+    padding: 1px;
+    font-size: 0.8em;
+  }
+
+  .content {
+    margin: 0.8em;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -111,6 +126,10 @@ img {
   }
   p {
     font-size: 0.6em;
+  }
+
+  .content {
+    margin: 1.5em;
   }
 }
 
